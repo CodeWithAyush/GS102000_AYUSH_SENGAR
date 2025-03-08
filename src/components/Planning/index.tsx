@@ -1,8 +1,9 @@
 import { useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { AgGridReact } from "ag-grid-react";
-import { ClientSideRowModelModule } from "ag-grid-community";
+import { CellValueChangedEvent, ClientSideRowModelModule, ColDef, ColGroupDef } from "ag-grid-community";
 import { RootState, updatePlanningData } from "../../store";
+import { Row } from "../../types/index";
 
 const Planning = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Planning = () => {
   const rowData = useMemo(() => {
     return stores.flatMap(store =>
       skus.map(sku => {
-        const row = {
+        const row:Row = {
           store: store.label,
           sku: sku.label,
         };
@@ -37,7 +38,7 @@ const Planning = () => {
     );
   }, [stores, skus, allWeeks, planningData]);
 
-  const columnDefs = useMemo(() => {
+  const columnDefs = useMemo ((): (ColDef<Row> | ColGroupDef<Row>)[] =>{
     const weekColumns = allWeeks.map(week => ({
       headerName: `${week.weekLabel} (${week.monthLabel})`,
       children: [
@@ -80,7 +81,7 @@ const Planning = () => {
     ];
   }, [allWeeks]);
 
-  const onCellValueChanged = (params: { colDef: { field: string; }; newValue: string; data: { store: string; sku: string; }; }) => {
+  const onCellValueChanged = (params: CellValueChangedEvent<Row>) => {
     if (params.colDef.field?.endsWith("_salesUnits")) {
       const weekId = params.colDef.field.split("_")[0];
       const salesUnits = parseInt(params.newValue) || 0;
@@ -109,7 +110,7 @@ const Planning = () => {
           onCellValueChanged={onCellValueChanged}
           modules={[ClientSideRowModelModule]}
           defaultColDef={{ resizable: true }}
-          enableCellChangeFlash={true}
+          // enableCellChangeFlash={true}
         />
       </div>
     </div>

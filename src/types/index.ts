@@ -28,6 +28,7 @@ export interface PlanningData {
   skuId: string;
   weekId: string;
   salesUnits: number;
+  gmDollars?:number|any;
 }
 
 export interface Month {
@@ -43,4 +44,9 @@ export interface AppState {
   planningData: PlanningData[];
   calendar: Month[];
   selectedStore: string | null;
+}
+export interface Row {
+  store: string;
+  sku: string;
+  [key: string]: string | number; 
 }

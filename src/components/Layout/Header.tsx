@@ -4,9 +4,6 @@ import { useNavigate } from "react-router-dom";
 import GSynergyLogo from "../../assets/Gsynergy Logo V2 Long Description.svg";
 import { logout } from "../../store";
 
-type Props = {
-  onLogout: () => void; // Prop to handle logout action
-};
 
 const Header = () => {
   const navigate = useNavigate();

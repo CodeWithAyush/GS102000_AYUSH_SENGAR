@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Retail Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The **Retail Analytics Dashboard** is a React-based web application built with TypeScript, designed to visualize and manage retail planning data. It provides two main views:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Charts View**:
+   - Displays a dual-axis chart showing Gross Margin (GM) Dollars and GM Percentage over 52 weeks for a selected store.
+   - Uses Chart.js to render a bar chart for GM Dollars and a line chart for GM Percentage.
+   - Allows users to filter data by store using a dropdown.
 
-## Expanding the ESLint configuration
+2. **Planning View**:
+   - Presents a data table using AG Grid, showing sales units, sales dollars, GM dollars, and GM percentage for each store-SKU combination across 52 weeks.
+   - Supports inline editing of sales units, which updates the underlying data in real-time via Redux state management.
+   - Includes conditional formatting for GM percentages (e.g., green for high values, red for low).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The project uses Redux for state management, ensuring a single source of truth for the application data. It leverages TypeScript for type safety, making the codebase more maintainable and less prone to runtime errors.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
+- Visualize GM Dollars and GM Percentage trends over time for a selected store.
+- Interactive data table for viewing and editing retail planning data.
+- Store filtering to focus on specific store data.
+- Conditional cell styling in the data table based on GM percentage values.
+- Responsive design for better usability.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
+- **React**: Frontend framework for building the UI.
+- **TypeScript**: Adds type safety to JavaScript, improving code quality and developer experience.
+- **Redux**: State management library for managing the application's data (stores, SKUs, planning data).
+- **Chart.js**: Used with `react-chartjs-2` to render charts in the Charts view.
+- **AG Grid**: A powerful data grid library for displaying and editing tabular data in the Planning view.
+- **Tailwind CSS**: Utility-first CSS framework for styling (assumed based on class names like `bg-gray-200`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Dependencies and Their Purpose
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+| Dependency              | Purpose                                                                 |
+|-------------------------|-------------------------------------------------------------------------|
+| `react`                | Core library for building the user interface.                           |
+| `react-dom`            | Provides DOM-specific methods for React.                                |
+| `typescript`           | Adds static types to JavaScript for better tooling and error catching.  |
+| `react-redux`          | Official React bindings for Redux to manage state in React components.  |
+| `redux`                | Core library for state management (used with `react-redux`).            |
+| `chart.js`             | Library for rendering charts (bar and line charts in the Charts view).  |
+| `react-chartjs-2`      | React wrapper for Chart.js to integrate charts into React components.   |
+| `@types/chart.js`      | TypeScript type definitions for Chart.js.                               |
+| `ag-grid-react`        | React component for AG Grid, used to render the data table.             |
+| `ag-grid-community`    | Core AG Grid library for community features (e.g., sorting, editing).   |
+| `tailwindcss`          | CSS framework for styling the application (assumed based on usage).     |
+
+## Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- **Node.js** (v16 or later): Required to run the JavaScript runtime.
+- **npm** (v8 or later): Package manager for installing dependencies (comes with Node.js).
+

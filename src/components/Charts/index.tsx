@@ -1,7 +1,9 @@
 import {
   BarElement,
   CategoryScale,
+  ChartData,
   Chart as ChartJS,
+  ChartOptions,
   Legend,
   LinearScale,
   LineElement,
@@ -44,7 +46,7 @@ const Charts = () => {
     []
   );
 
-  const chartData = useMemo(() => {
+  const chartData = useMemo((): ChartData<"bar", number[], string>=> {
     const gmDollarsByWeek = new Array(52).fill(0);
     const gmPercentByWeek = new Array(52).fill(0);
 
@@ -79,16 +81,13 @@ const Charts = () => {
           yAxisID: "y-left",
         },
         {
-          type: "line",
+          type: "bar",
           label: "GM %",
           data: gmPercentByWeek,
           borderColor: "rgba(255, 159, 64, 1)", // Orange line
           backgroundColor: "rgba(255, 159, 64, 0.6)",
           borderWidth: 2,
-          fill: false,
           yAxisID: "y-right",
-          pointRadius: 2,
-          pointHoverRadius: 4,
         },
       ],
     };
@@ -100,7 +99,7 @@ const Charts = () => {
     dispatch(setSelectedStore(storeId));
   };
 
-  const options = {
+  const options: ChartOptions<"bar"> = {
     responsive: true,
     plugins: {
       legend: {
@@ -129,7 +128,7 @@ const Charts = () => {
         },
         ticks: {
           color: "#ffffff",
-          callback: (value) => `$${value.toLocaleString()}`,
+          callback: (value: any) => `$${value.toLocaleString()}`,
         },
         beginAtZero: true,
       },
@@ -143,7 +142,7 @@ const Charts = () => {
         },
         ticks: {
           color: "#ffffff",
-          callback: (value) => `${value}%`,
+          callback: (value: any) => `${value}%`,
         },
         beginAtZero: true,
         max: 70, 

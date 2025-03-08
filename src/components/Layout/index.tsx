@@ -7,7 +7,6 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Navbar from "./Navbar";
 
-type Props = {};
 type PropsINavbar = {
   text: string;
   path: string;
@@ -21,7 +20,7 @@ const navItems: PropsINavbar = [
   { text: "Charts", path: "/charts", icon: <HiOutlineChartPie /> },
 ];
 
-const Layout = (props: Props) => {
+const Layout = () => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
