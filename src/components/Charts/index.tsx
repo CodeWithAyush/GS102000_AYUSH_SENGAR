@@ -10,6 +10,7 @@ import {
   PointElement,
   Title,
   Tooltip,
+  LineController
 } from "chart.js";
 import React, { useMemo } from "react";
 import { Chart } from "react-chartjs-2";
@@ -23,6 +24,7 @@ ChartJS.register(
   BarElement,
   LineElement,
   PointElement,
+  LineController,
   Title,
   Tooltip,
   Legend
@@ -81,7 +83,7 @@ const Charts = () => {
           yAxisID: "y-left",
         },
         {
-          type: "bar",
+          type: "bar" as const,
           label: "GM %",
           data: gmPercentByWeek,
           borderColor: "rgba(255, 159, 64, 1)", // Orange line
