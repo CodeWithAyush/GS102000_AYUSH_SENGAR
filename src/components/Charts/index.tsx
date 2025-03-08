@@ -1,161 +1,69 @@
-import {
-  BarElement,
-  CategoryScale,
-  ChartData,
-  Chart as ChartJS,
-  ChartOptions,
-  Legend,
-  LinearScale,
-  LineElement,
-  PointElement,
-  Title,
-  Tooltip,
-  LineController
-} from "chart.js";
-import React, { useMemo } from "react";
-import { Chart } from "react-chartjs-2";
+import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import {
+  BarChart,
+  Bar,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import { RootState, setSelectedStore } from "../../store";
 import { PlanningData, SKU, Store } from "../../types";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  LineElement,
-  PointElement,
-  LineController,
-  Title,
-  Tooltip,
-  Legend
-);
+// Define the data point interface for Recharts
+interface ChartDataPoint {
+  week: string;
+  gmDollars: number;
+  gmPercent: number;
+}
 
 const Charts = () => {
   const dispatch = useDispatch();
   const { stores, skus, planningData, selectedStore } = useSelector(
     (state: RootState) => state.app
   );
-  const [storeFilter, setStoreFilter] = React.useState<string>(
+  const [storeFilter, setStoreFilter] = useState<string>(
     selectedStore || stores[0]?.id || ""
   );
 
-  const weeks = useMemo(
-    () =>
-      Array.from(
-        { length: 52 },
-        (_, i) => `W${(i + 1).toString().padStart(2, "0")}`
-      ),
-    []
-  );
+  const chartData = useMemo((): ChartDataPoint[] => {
+    const gmDollarsByWeek: { [key: string]: number } = {};
+    const gmPercentByWeek: { [key: string]: number } = {};
 
-  const chartData = useMemo((): ChartData<"bar", number[], string>=> {
-    const gmDollarsByWeek = new Array(52).fill(0);
-    const gmPercentByWeek = new Array(52).fill(0);
-
+    // Aggregate data for the selected store
     planningData.forEach((pd: PlanningData) => {
       if (pd.storeId === storeFilter) {
-        const weekIndex = parseInt(pd.weekId.replace("W", "")) - 1; 
-        if (weekIndex >= 0 && weekIndex < 52) {
-          gmDollarsByWeek[weekIndex] =
-            (gmDollarsByWeek[weekIndex] || 0) + pd.gmDollars;
+        const week = pd.weekId;
+        gmDollarsByWeek[week] = (gmDollarsByWeek[week] || 0) + pd.gmDollars;
 
-          const sku = skus.find((s: SKU) => s.id === pd.skuId);
-          const salesDollars = pd.salesUnits * (sku?.price || 0);
-          if (salesDollars > 0) {
-            const gmPercent = (pd.gmDollars / salesDollars) * 100;
-            gmPercentByWeek[weekIndex] =
-              gmPercent || gmPercentByWeek[weekIndex] || 0;
-          }
+        const sku = skus.find((s: SKU) => s.id === pd.skuId);
+        const salesDollars = pd.salesUnits * (sku?.price || 0);
+        if (salesDollars > 0) {
+          const gmPercent = (pd.gmDollars / salesDollars) * 100;
+          gmPercentByWeek[week] = gmPercent || gmPercentByWeek[week] || 0;
         }
       }
     });
 
-    return {
-      labels: weeks,
-      datasets: [
-        {
-          type: "bar",
-          label: "GM Dollars",
-          data: gmDollarsByWeek,
-          backgroundColor: "rgba(54, 162, 235, 0.6)", // Blue bars
-          borderColor: "rgba(54, 162, 235, 1)",
-          borderWidth: 1,
-          yAxisID: "y-left",
-        },
-        {
-          type: "bar" as const,
-          label: "GM %",
-          data: gmPercentByWeek,
-          borderColor: "rgba(255, 159, 64, 1)", // Orange line
-          backgroundColor: "rgba(255, 159, 64, 0.6)",
-          borderWidth: 2,
-          yAxisID: "y-right",
-        },
-      ],
-    };
+    // Generate 52 weeks of data, filling in zeros where no data exists
+    const weeks = Array.from({ length: 52 }, (_, i) =>
+      `W${(i + 1).toString().padStart(2, "0")}`
+    );
+    return weeks.map((week) => ({
+      week,
+      gmDollars: gmDollarsByWeek[week] || 0,
+      gmPercent: gmPercentByWeek[week] || 0,
+    }));
   }, [planningData, skus, storeFilter]);
 
   const handleStoreChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const storeId = e.target.value;
     setStoreFilter(storeId);
     dispatch(setSelectedStore(storeId));
-  };
-
-  const options: ChartOptions<"bar"> = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "bottom",
-        labels: {
-          color: "#ffffff",
-        },
-      },
-      title: {
-        display: true,
-        text: "Gross Margin",
-        color: "#ffffff",
-        font: {
-          size: 18,
-        },
-      },
-    },
-    scales: {
-      "y-left": {
-        type: "linear",
-        position: "left",
-        title: {
-          display: true,
-          text: "GM Dollars",
-          color: "#ffffff",
-        },
-        ticks: {
-          color: "#ffffff",
-          callback: (value: any) => `$${value.toLocaleString()}`,
-        },
-        beginAtZero: true,
-      },
-      "y-right": {
-        type: "linear",
-        position: "right",
-        title: {
-          display: true,
-          text: "GM %",
-          color: "#ffffff",
-        },
-        ticks: {
-          color: "#ffffff",
-          callback: (value: any) => `${value}%`,
-        },
-        beginAtZero: true,
-        max: 70, 
-      },
-      x: {
-        ticks: {
-          color: "#ffffff",
-        },
-      },
-    },
-    maintainAspectRatio: false,
   };
 
   return (
@@ -174,8 +82,54 @@ const Charts = () => {
             ))}
           </select>
         </div>
-        <div style={{ position: "relative", height: "600px" }}>
-          <Chart type="bar" data={chartData} options={options} />
+        <div style={{ height: "600px" }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={chartData}
+              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" stroke="#444" />
+              <XAxis
+                dataKey="week"
+                stroke="#ffffff"
+                interval="preserveStartEnd"
+                tick={{ fontSize: 12 }}
+              />
+              <YAxis
+                yAxisId="left"
+                orientation="left"
+                stroke="#ffffff"
+                tickFormatter={(value) => `$${value.toLocaleString()}`}
+              />
+              <YAxis
+                yAxisId="right"
+                orientation="right"
+                stroke="#ff9f40" // Orange for GM %
+                tickFormatter={(value) => `${value}%`}
+                domain={[0, 70]} // Match the max of 70 from your Chart.js version
+              />
+              <Tooltip
+                contentStyle={{ backgroundColor: "#333", color: "#fff" }}
+                itemStyle={{ color: "#fff" }}
+              />
+              <Legend wrapperStyle={{ color: "#ffffff" }} />
+              <Bar
+                yAxisId="left"
+                dataKey="gmDollars"
+                name="GM Dollars"
+                fill="rgba(54, 162, 235, 0.6)"
+                barSize={20}
+              />
+              <Line
+                yAxisId="right"
+                dataKey="gmPercent"
+                name="GM %"
+                stroke="rgba(255, 159, 64, 1)"
+                strokeWidth={2}
+                dot={false} // Optional: remove dots for a cleaner line
+              />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
     </div>
