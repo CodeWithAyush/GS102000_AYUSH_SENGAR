@@ -1,0 +1,1100 @@
+[
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W01",
+    "salesUnits": 58
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W07",
+    "salesUnits": 107
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W09",
+    "salesUnits": 0
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W11",
+    "salesUnits": 92
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W13",
+    "salesUnits": 122
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W15",
+    "salesUnits": 38
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W23",
+    "salesUnits": 88
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W31",
+    "salesUnits": 45
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W35",
+    "salesUnits": 197
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00158",
+    "weekId": "W50",
+    "salesUnits": 133
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W05",
+    "salesUnits": 107
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W06",
+    "salesUnits": 104
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W09",
+    "salesUnits": 32
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W18",
+    "salesUnits": 174
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W23",
+    "salesUnits": 174
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W27",
+    "salesUnits": 37
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W28",
+    "salesUnits": 95
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W29",
+    "salesUnits": 161
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W30",
+    "salesUnits": 175
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W32",
+    "salesUnits": 200
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W33",
+    "salesUnits": 120
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00269",
+    "weekId": "W51",
+    "salesUnits": 167
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00300",
+    "weekId": "W14",
+    "salesUnits": 135
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00300",
+    "weekId": "W15",
+    "salesUnits": 42
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00300",
+    "weekId": "W41",
+    "salesUnits": 185
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00300",
+    "weekId": "W46",
+    "salesUnits": 38
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00300",
+    "weekId": "W50",
+    "salesUnits": 149
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W16",
+    "salesUnits": 40
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W18",
+    "salesUnits": 140
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W19",
+    "salesUnits": 200
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W23",
+    "salesUnits": 108
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W36",
+    "salesUnits": 28
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W42",
+    "salesUnits": 11
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00304",
+    "weekId": "W47",
+    "salesUnits": 42
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W04",
+    "salesUnits": 167
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W08",
+    "salesUnits": 143
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W10",
+    "salesUnits": 120
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W12",
+    "salesUnits": 21
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W13",
+    "salesUnits": 92
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W14",
+    "salesUnits": 141
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W15",
+    "salesUnits": 108
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W19",
+    "salesUnits": 167
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W21",
+    "salesUnits": 1
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W42",
+    "salesUnits": 63
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W44",
+    "salesUnits": 179
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00766",
+    "weekId": "W49",
+    "salesUnits": 110
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W02",
+    "salesUnits": 100
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W05",
+    "salesUnits": 16
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W09",
+    "salesUnits": 76
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W11",
+    "salesUnits": 66
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W13",
+    "salesUnits": 143
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W17",
+    "salesUnits": 95
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W20",
+    "salesUnits": 39
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W21",
+    "salesUnits": 6
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W29",
+    "salesUnits": 174
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W35",
+    "salesUnits": 128
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W36",
+    "salesUnits": 166
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W41",
+    "salesUnits": 185
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W43",
+    "salesUnits": 47
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00786",
+    "weekId": "W44",
+    "salesUnits": 87
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W08",
+    "salesUnits": 178
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W13",
+    "salesUnits": 195
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W14",
+    "salesUnits": 68
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W16",
+    "salesUnits": 99
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W21",
+    "salesUnits": 58
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W33",
+    "salesUnits": 96
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W38",
+    "salesUnits": 26
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W40",
+    "salesUnits": 133
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK00960",
+    "weekId": "W51",
+    "salesUnits": 45
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W04",
+    "salesUnits": 54
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W07",
+    "salesUnits": 46
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W08",
+    "salesUnits": 41
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W12",
+    "salesUnits": 83
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W18",
+    "salesUnits": 11
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W22",
+    "salesUnits": 144
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W28",
+    "salesUnits": 75
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W32",
+    "salesUnits": 126
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W35",
+    "salesUnits": 4
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W38",
+    "salesUnits": 51
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W42",
+    "salesUnits": 165
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01183",
+    "weekId": "W48",
+    "salesUnits": 80
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W02",
+    "salesUnits": 124
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W21",
+    "salesUnits": 16
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W22",
+    "salesUnits": 176
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W33",
+    "salesUnits": 97
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W40",
+    "salesUnits": 24
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W42",
+    "salesUnits": 132
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01189",
+    "weekId": "W46",
+    "salesUnits": 21
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W02",
+    "salesUnits": 136
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W07",
+    "salesUnits": 182
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W08",
+    "salesUnits": 124
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W09",
+    "salesUnits": 66
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W24",
+    "salesUnits": 39
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W31",
+    "salesUnits": 76
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W35",
+    "salesUnits": 113
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W39",
+    "salesUnits": 12
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01193",
+    "weekId": "W49",
+    "salesUnits": 181
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W01",
+    "salesUnits": 171
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W14",
+    "salesUnits": 83
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W15",
+    "salesUnits": 117
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W23",
+    "salesUnits": 126
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W27",
+    "salesUnits": 67
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W32",
+    "salesUnits": 66
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01249",
+    "weekId": "W34",
+    "salesUnits": 198
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W02",
+    "salesUnits": 77
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W03",
+    "salesUnits": 59
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W13",
+    "salesUnits": 96
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W17",
+    "salesUnits": 46
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W22",
+    "salesUnits": 117
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W23",
+    "salesUnits": 24
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W28",
+    "salesUnits": 188
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W33",
+    "salesUnits": 100
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W34",
+    "salesUnits": 114
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W38",
+    "salesUnits": 121
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01319",
+    "weekId": "W44",
+    "salesUnits": 198
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W05",
+    "salesUnits": 65
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W10",
+    "salesUnits": 191
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W11",
+    "salesUnits": 12
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W13",
+    "salesUnits": 130
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W19",
+    "salesUnits": 36
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W24",
+    "salesUnits": 73
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W26",
+    "salesUnits": 188
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W27",
+    "salesUnits": 86
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W28",
+    "salesUnits": 14
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W29",
+    "salesUnits": 84
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W35",
+    "salesUnits": 172
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W43",
+    "salesUnits": 113
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01349",
+    "weekId": "W50",
+    "salesUnits": 72
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W10",
+    "salesUnits": 121
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W14",
+    "salesUnits": 28
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W17",
+    "salesUnits": 32
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W19",
+    "salesUnits": 173
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W20",
+    "salesUnits": 47
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W28",
+    "salesUnits": 126
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W33",
+    "salesUnits": 93
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W37",
+    "salesUnits": 152
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W38",
+    "salesUnits": 79
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01549",
+    "weekId": "W42",
+    "salesUnits": 66
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W04",
+    "salesUnits": 161
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W05",
+    "salesUnits": 48
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W06",
+    "salesUnits": 5
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W10",
+    "salesUnits": 61
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W11",
+    "salesUnits": 53
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W16",
+    "salesUnits": 186
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W28",
+    "salesUnits": 2
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W30",
+    "salesUnits": 53
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W33",
+    "salesUnits": 104
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W36",
+    "salesUnits": 153
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W38",
+    "salesUnits": 23
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W40",
+    "salesUnits": 51
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W44",
+    "salesUnits": 152
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01566",
+    "weekId": "W46",
+    "salesUnits": 144
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W01",
+    "salesUnits": 31
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W02",
+    "salesUnits": 121
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W07",
+    "salesUnits": 112
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W10",
+    "salesUnits": 119
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W15",
+    "salesUnits": 165
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W37",
+    "salesUnits": 113
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W38",
+    "salesUnits": 145
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W44",
+    "salesUnits": 183
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01642",
+    "weekId": "W46",
+    "salesUnits": 53
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W05",
+    "salesUnits": 114
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W18",
+    "salesUnits": 7
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W21",
+    "salesUnits": 65
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W30",
+    "salesUnits": 184
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W39",
+    "salesUnits": 12
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W47",
+    "salesUnits": 20
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W48",
+    "salesUnits": 86
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01733",
+    "weekId": "W51",
+    "salesUnits": 116
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W02",
+    "salesUnits": 84
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W10",
+    "salesUnits": 10
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W12",
+    "salesUnits": 111
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W15",
+    "salesUnits": 94
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W21",
+    "salesUnits": 59
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W23",
+    "salesUnits": 131
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W24",
+    "salesUnits": 96
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W25",
+    "salesUnits": 200
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W29",
+    "salesUnits": 74
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W35",
+    "salesUnits": 175
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W40",
+    "salesUnits": 192
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01896",
+    "weekId": "W47",
+    "salesUnits": 59
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01927",
+    "weekId": "W01",
+    "salesUnits": 23
+  },
+  {
+    "storeId": "ST035",
+    "skuId": "SK01927",
+    "weekId": "W04",
+    "salesUnits": 30
+  }
+]
