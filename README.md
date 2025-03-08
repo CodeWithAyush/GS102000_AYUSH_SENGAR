@@ -1,4 +1,4 @@
-# Retail Analytics Dashboard
+# GSynergy Data View App
 
 ## Overview
 
